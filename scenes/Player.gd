@@ -14,7 +14,7 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(delta: float) -> void:	
 	pass
 	
 func _physics_process(delta):
@@ -31,21 +31,23 @@ func _physics_process(delta):
 	velocity.x = walk_speed*Input.get_action_strength("ui_right") - walk_speed*Input.get_action_strength("ui_left")
 
 	if Input.is_action_just_pressed("ui_right"):
+		$Sprite2D.flip_h = false
 		if sum_delta - dash_delta < 30*delta and sum_delta - last_dash > 2:
 			velocity.x = 8000
 			last_dash = sum_delta
 		dash_delta = sum_delta
 	
 	if Input.is_action_just_pressed("ui_left"):
+		$Sprite2D.flip_h = true
 		if sum_delta - dash_delta < 30*delta and sum_delta - last_dash > 2:
 			velocity.x = -8000
 			last_dash = sum_delta
 		dash_delta = sum_delta
 		
 	if Input.is_key_pressed(KEY_SHIFT):
-		scale = Vector2(0.9, 0.9)
+		scale.y = 0.9
 	else:
-		scale = Vector2(1, 1)
+		scale.y = 1
 
 	move_and_slide()
 	sum_delta += delta

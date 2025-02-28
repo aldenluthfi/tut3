@@ -56,3 +56,9 @@ Sprite flip diimplementasikan dengan mengubah nilai `flip_h` pada sprite
 			last_dash = sum_delta
 		dash_delta = sum_delta
 ```
+
+## Referensi
+- https://youtu.be/Hpbn-w7H2V4?si=y29l62xfbiS28Qm8
+- https://www.youtube.com/watch?v=IOe1aGY6hXA
+- https://www.youtube.com/watch?v=DW4CQoYddXQ
+- https://www.youtube.com/watch?v=tfdXgiMwUBw

@@ -71,6 +71,9 @@ Sprite flip diimplementasikan dengan mengubah nilai `flip_h` pada sprite
 Jawab: Kebetulan saya sudah membuat beberapa aset tower sebelum semester ini dimulai, sehingga saya memakai salah satu dari asset itu untuk melambangkan goal untuk player
 
 - Membuat minimal 1 (satu) audio untuk efek suara (SFX) dan memasukkannya ke dalam permainan. Kamu dapat membuatnya sendiri atau mencari dari koleksi aset gratis.
+
+Jawab: 
+
 - Membuat minimal 1 (satu) musik latar (background music) dan memasukkannya ke dalam permainan. Kamu dapat membuatnya sendiri atau mencari dari koleksi aset gratis.
 
 Jawab: Saya menambahkan sebuah musik latar pada scene Main dari permainan sehingga musik latar tersebut terdengar selama permainan berjalan
@@ -81,4 +84,4 @@ Jawab: Denga Sprite Tower, object baru ini akan menjadi goal pemain. Ketika meny
 
 - Implementasikan audio feedback dari interaksi antara objek baru dengan objek pemain. Misalnya, muncul efek suara ketika pemain tabrakan dengan objek baru.
 
-
+Jawab: 

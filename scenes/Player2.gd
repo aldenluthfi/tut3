@@ -23,6 +23,7 @@ func _physics_process(delta):
 	var animation = "idle"
 	if is_on_floor() and Input.is_action_just_pressed('ui_up'):
 		velocity.y = jump_speed
+		$AudioStreamPlayer2D.play()
 		can_doublejump = true
 	
 	elif can_doublejump and Input.is_action_just_pressed('ui_up'):

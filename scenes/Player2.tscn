@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://bovtvyqf0w2li"]
+[gd_scene load_steps=9 format=3 uid="uid://bovtvyqf0w2li"]
 
 [ext_resource type="Script" path="res://scenes/Player2.gd" id="1_bxsy5"]
 [ext_resource type="Texture2D" uid="uid://dhekgeikjt1lx" path="res://assets/kenney_platformercharacters/PNG/Player/player_tilesheet.png" id="1_fi4vm"]
+[ext_resource type="AudioStream" uid="uid://b36pjgayaua05" path="res://assets/Video Game Jump Sound Effect.mp3" id="3_vcbca"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lmr3o"]
 size = Vector2(45, 89)
@@ -52,3 +53,6 @@ sprite_frames = SubResource("SpriteFrames_l5f1d")
 animation = &"idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_vcbca")

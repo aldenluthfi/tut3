@@ -72,7 +72,7 @@ Jawab: Kebetulan saya sudah membuat beberapa aset tower sebelum semester ini dim
 
 - Membuat minimal 1 (satu) audio untuk efek suara (SFX) dan memasukkannya ke dalam permainan. Kamu dapat membuatnya sendiri atau mencari dari koleksi aset gratis.
 
-Jawab: 
+Jawab: Saya menambahkan sound effect ketika player melompat, sound effect ini saya dapatkan dari koleksi aset gratis,
 
 - Membuat minimal 1 (satu) musik latar (background music) dan memasukkannya ke dalam permainan. Kamu dapat membuatnya sendiri atau mencari dari koleksi aset gratis.
 
@@ -84,4 +84,8 @@ Jawab: Denga Sprite Tower, object baru ini akan menjadi goal pemain. Ketika meny
 
 - Implementasikan audio feedback dari interaksi antara objek baru dengan objek pemain. Misalnya, muncul efek suara ketika pemain tabrakan dengan objek baru.
 
-Jawab: 
+Jawab: Saya mengimplementasikan sound effect ketika player menyentuh tower, sound effect ini akan memainkan sound effect ketika player menyentuh tower
+
+- Polishing
+
+Jawab: Saya menambahkan background dan efek idle dari suara tower. sound effect ini akan menjadi lebih jerap ketika player semakin dekat dengan tower

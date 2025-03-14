@@ -1,7 +1,8 @@
-[gd_scene load_steps=17 format=3 uid="uid://677dr53u57s2"]
+[gd_scene load_steps=18 format=3 uid="uid://677dr53u57s2"]
 
 [ext_resource type="Texture2D" uid="uid://5nfr14ngrxks" path="res://assets/AddSpeedLV2.png" id="1_0628p"]
 [ext_resource type="Script" path="res://scenes/Tower.gd" id="1_k50mh"]
+[ext_resource type="AudioStream" uid="uid://dlt53up2uwwa1" path="res://assets/Wind Sound SOUND EFFECT - No Copyright[Download Free].mp3" id="3_q8w30"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a4ckt"]
 size = Vector2(10, 27)
@@ -110,5 +111,10 @@ position = Vector2(9.53674e-07, -12)
 scale = Vector2(0.339844, 0.339844)
 sprite_frames = SubResource("SpriteFrames_w8xvo")
 frame_progress = 0.666868
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_q8w30")
+autoplay = true
+attenuation = 3.03143
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

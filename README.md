@@ -72,11 +72,17 @@ Jawab: Kebetulan saya sudah membuat beberapa aset tower sebelum semester ini dim
 
 - Membuat minimal 1 (satu) audio untuk efek suara (SFX) dan memasukkannya ke dalam permainan. Kamu dapat membuatnya sendiri atau mencari dari koleksi aset gratis.
 
-Jawab: Saya menambahkan sound effect ketika player melompat, sound effect ini saya dapatkan dari koleksi aset gratis,
+Jawab: Saya menambahkan sound effect ketika player melompat, sound effect ini saya dapatkan dari koleksi aset gratis. Saya menambahkan fitur ini dengan kode brikut
+```
+	if is_on_floor() and Input.is_action_just_pressed('ui_up'):
+		velocity.y = jump_speed
+		$AudioStreamPlayer2D.play()
+		can_doublejump = true
+```
 
 - Membuat minimal 1 (satu) musik latar (background music) dan memasukkannya ke dalam permainan. Kamu dapat membuatnya sendiri atau mencari dari koleksi aset gratis.
 
-Jawab: Saya menambahkan sebuah musik latar pada scene Main dari permainan sehingga musik latar tersebut terdengar selama permainan berjalan
+Jawab: Saya menambahkan sebuah musik latar pada scene Main dari permainan sehingga musik latar tersebut terdengar selama permainan berjalan. saya melakukan hal tersebut dengan menambahkan AudioStreamPlayer pada scene Main dan mengatur autoplay
 
 - Implementasikan interaksi antara objek baru tersebut dengan objek yang dikendalikan pemain. Misalnya, pemain dapat menciptakan atau menghilangkan objek baru tersebut ketika menekan suatu tombol atau tabrakan dengan objek lain di dunia permainan.
 
@@ -84,8 +90,8 @@ Jawab: Denga Sprite Tower, object baru ini akan menjadi goal pemain. Ketika meny
 
 - Implementasikan audio feedback dari interaksi antara objek baru dengan objek pemain. Misalnya, muncul efek suara ketika pemain tabrakan dengan objek baru.
 
-Jawab: Saya mengimplementasikan sound effect ketika player menyentuh tower, sound effect ini akan memainkan sound effect ketika player menyentuh tower
+Jawab: Saya mengimplementasikan sound effect ketika player menyentuh tower, sound effect ini akan memainkan sound effect ketika player menyentuh tower. Saya mengimplementasikannya dengan membuat AudioStreamPlayer2D pada WinScreen yang autoplay
 
 - Polishing
 
-Jawab: Saya menambahkan background dan efek idle dari suara tower. sound effect ini akan menjadi lebih jerap ketika player semakin dekat dengan tower
+Jawab: Saya menambahkan background dan efek idle dari suara tower. sound effect ini akan menjadi lebih jerap ketika player semakin dekat dengan tower. Hal ini saya lakukan dengan menambahkan AudioStreamPlayer2D pada scene Tower dan mengatur volume dari audio tersebut dengan kode berikut dan AudioListener pada player
